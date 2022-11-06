@@ -1,0 +1,45 @@
+<html>
+    <head> <title>Result card</title>
+    <style>
+        body{padding:20px 90px;}
+        .bold{font-weight: bold}
+        #btn{padding:8px; cursor: pointer; width: 10%; color:white;margin-left:40px; background-color: black;  border-radius:5px;}
+        #btn:hover{background-color: rgb(38, 35, 35);transform:scale(1.08);}
+        #resultcard{ width:70%; height:300px; margin-top:30px; border: 2px solid black;}
+        #fname{border-bottom: 1px solid grey;}
+      
+    </style>
+    </head>
+    <body>
+        <h1> Result Card  </h1>
+     Your Name : <input type="text" id="name">  <br><br>
+     Roll Number : <input type="number" id="rolnum"><!-- <span id="error" style="color:red;"></span> --><br><br>
+     <span class="bold">NOTE :-     Enter Obtain Marks of Subject and Total Marks of Each Subject is  100.</span><br><br>
+     Math : <input type="number" id="math"> <br><br>
+     English : <input type="number" id="english"><br><br>
+     Urdu : <input type="number" id="urdu"><br><br>
+     Computer Science : <input type="number" id="comp"><br><br>
+    
+     <span class="comit" style="font-weight:bold;">....To Print Result Card <br> Click on Print Button.....</span> <br><br>
+     <input type="button" value="Print" id="btn" onclick="resultcard()">
+     <div id="resultcard" style="padding:0px 20px;border-radius: 5px;">
+        <h1>Print of Result Card</h1>
+        <span id="fname1"></span>
+        <span id="rollnumber"></span>
+        <span id="sub1"></span>
+        <span id="sub2"></span>
+        <span id="sub3"></span>
+        <span id="sub4"></span>
+        <span class="total-marks"></span>
+        <span class="Obtain-marks"></span>
+        <span id="Percentage"></span>
+        <span id="Grade"></span>
+        <span id="status"></span>
+
+
+
+     </div>
+
+     <script src="card-js.js"></script>
+    </body>
+</html>
